@@ -1,0 +1,39 @@
+<div class= "main">
+<table align = "center">
+    <tr>
+        
+        <td class = "user">Enter the username</td>
+    </tr>
+    <tr>
+        <td><input class = "ques" type="text"  [(ngModel)] = "Username" align="center" placeholder="username" required></td>
+    </tr>
+    <tr>
+        <td class = "user">1. What was the name of your first pet?</td>
+    </tr>
+    <tr>
+        <td><input class = "ques" type="text"  [(ngModel)] = "Ans1" placeholder="enter your answer" required></td>
+    </tr>
+    <tr>
+        <tr>
+            <td class = "user">2. What is your favorite food?</td>
+        </tr>
+        <tr>
+            <td><input  class = "ques" type="text" [(ngModel)] = "Ans2" placeholder="enter your answer" required></td>
+        </tr>
+        <tr>
+            <tr>
+                <td class = "user">3. What city were you born in?</td>
+            </tr>
+            <tr>
+                <td><input  class = "ques" type="text"  [(ngModel)] = "Ans3" placeholder="enter your answer" required></td>
+            </tr>
+            <tr>
+        <td><button (click) = "Next()" class="submit" align="center"> Next </button></td>
+    </tr>
+</table>
+</div>
+<div>
+    <p *ngFor="let m of cust">
+        {{m.id}}
+    </p>
+</div>
